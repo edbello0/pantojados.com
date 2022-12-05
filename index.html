@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/pantojadosversion2.png" type="image/x-icon">
+    <title>Pantojados</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pantojados.css">
+
+    <!--swiper css-->
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+
+
+
+</head>
+<body>
+
+  <div class="contenedornav">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="position:fixed; z-index:1000; width:100%;">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-5" href="#Home"><img src="imagenes/logopantojados paraweb-01.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Home">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-light" href="#Antojos">Antojos</a></li>
+              <li><a class="dropdown-item text-light" href="#Bebidas">Bebidas</a></li>
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Spot">Spot</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Mapa">Encuentranos</a>
+          </li>
+         
+          
+         
+        </ul>
+      </div>
+    </div>
+    
+  </nav>
+
+
+
+<!--compras-->
+
+    <div class="compras">
+        <a class="carrito" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"><i class="fa-solid fa-cart-plus"></i>
+        </a>
+
+        <div class="offcanvas offcanvas-end bg-dark text-light" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="staticBackdropLabel">Mi Carrito</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+   
+               
+             <h2>Tu menu</h2>
+              <div id="lista_de_carrito" class="w-100 px-2 my-3">
+                <h3 id="valor"></h3>
+                
+            </div>
+            <div class="botonpedido">
+                <button class="btn" type="button" onclick="openwin()">
+                    HACER PEDIDO
+                   </button>
+            </div>
+          </div>
+
+        
+    </div>
+
+</div>  
+
+  <!------section principal ----->
+
+
+  <section id="Home">
+    <h2>El cafe <br> Que necesita<br>Tu Paladar </h2>
+    
+  </section>
+
+
+
+  <!------Antojos-->
+
+
+
+  <section id="Antojos">
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <h2 class="f-5 text-center mt-5 mbt-5 text-light">Antojos</h2>
+
+
+
+
+            <div class="sliderantojos">
+                <div id="carouselExampleControls" class="carousel slide mb-5" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="card col m2">
+                                    <img src="imagenes/pan de bono.jpg" class="card-img-top pt-2" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Pan de Bono</h5>
+                                      <p class="card-text text-light">Pan de bono de bocadillo 100% Artesanal <b>$1500COP</b></p>
+                                      <button  onclick="add('Empanada Mixta')" href="#" class="btn">Agregar<i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                  </div>
+                                  <div class="card col m2">
+                                    <img src="imagenes/empanadacarne.jpg" class="card-img-top mt-2" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Empanada Mixta</h5>
+                                      <p class="card-text text-light">Empanada de carne molida y pollo 100% Artesanal <b>$2000COP</b></p>
+                                      
+
+                                      <button  onclick="add('Empanada Mixta')" href="#" class="btn">Agregar<i class="fa-solid fa-plus"></i></button>
+                                    </div>
+
+
+
+                                  </div>
+                                  <div class="card col m2">
+                                    <img src="imagenes/churro.jpg" class="card-img-top mt-2" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Churro de Arequipe</h5>
+                                      <p class="card-text text-light">churro de arequipe $1500COP</p>
+                                      <button  onclick="add('Churro', 1500)" href="#" class="btn">Agregar<i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+
+
+                      </div>
+                      <div class="carousel-item">
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="card col m2">
+                                    <img src="imagenes/pan de la abuela.jpg" class="card-img-top mt-2" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Pan de la abuela</h5>
+                                      <p class="card-text">Pan nacido del tolima sin grasas saturadas 100% Artesanal <b>$3000COP</b></p>
+                                      <button  onclick="add('Pan de la Abuela')" href="#" class="btn">Agregar<i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                  </div>
+                                  <div class="card col m2">
+                                    <img src="imagenes/pasabocas.jpg" class="card-img-top mt-2" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Pasabocas de Bocadillo</h5>
+                                      <p class="card-text">Pasabocas de bocadillo 100% Artesanal <b>$2000COP</b></p>
+                                      <button  onclick="add('Pasabocas Bocadillo')" href="#" class="btn">Agregar<i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                  </div>
+
+                                  
+
+
+
+
+                                  <div class="card col m2">
+                                    <img src="imagenes/pastel de pollo.jpg" class="card-img-top mt-2" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Pastel de Pollo</h5>
+                                      <p class="card-text">Patel pollo Desmechado <b>$3500COP</b></p>
+                                      <button  onclick="add('Pastel de Pollo')" href="#" class="btn">Agregar<i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                  </div>
+                            </div>
+                      </div>
+
+                    </div>
+                      <div class="carousel-item">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="card col m2">
+                                    <img src="imagenes/boñuelo.jpg" class="card-img-top mt-2" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Buñuelo Artesanal</h5>
+                                      <p class="card-text">Buñuelo 100% Artesnal <b>$1000COP</b>.</p>
+                                      <button  onclick="add('Buñuelo Artesanal')" href="#" class="btn">Agregar<i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                  </div>
+                                  <div class="card col m2">
+                                    <img src="imagenes/dedo de queso.jpg" class="card-img-top mt-2" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Palos de Queso</h5>
+                                      <p class="card-text">Palos de Queso sin grasas saturadas <b>$2500COP</b></p>
+                                      <button  onclick="add('Palos de Queso')" href="#" class="btn">Agregar<i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                  </div>
+                                  <div class="card col m2">
+                                    <img src="imagenes/snack.jpg" class="card-img-top mt-2" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Snacks</h5>
+                                      <p class="card-text">Papas margarita <b>$2500COP</b></p>
+                                      <button  onclick="add('Snacks')" href="#" class="btn">Agregar<i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev me--5" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<!----Bebidas-->
+<section id="Bebidas">
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <h2 class="f-5 text-center mt-5 mbt-5 text-light">Bebidas</h2>
+
+
+
+
+            <div class="sliderantojos">
+                <div id="carouselExampleControls2" class="carousel slide mb-5" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="card col m2">
+                                    <img src="imagenes/8Oz-10Oz.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Tinto Tradicional</h5>
+                                      <p class="card-text">Hecho en Greca <br><b>12 Oz:$3000COP</b><br><b>08 Oz:$2000COP</b><br><b>04 Oz:$1000COP</b></p>
+                                      <button  onclick="add('Tinto Tradicional')" href="#" class="btn">Agregar<i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                  </div>
+                                  <div class="card col m2">
+                                    <img src="imagenes/5Oz.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Cafe con Leche</h5>
+                                      <p class="card-text"><b>12 Oz:$3000COP</b><br><b>08 Oz:$2000COP</b><br><b>04 Oz:$1000COP</b></p>
+                                      <button  onclick="add('Cafe con leche')" href="#" class="btn">Agregar<i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                  </div>
+                                  <div class="card col m2">
+                                    <img src="imagenes/150z.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Carajillo de Aguardiente</h5>
+                                      <p class="card-text"><b>12 Oz:$5000COP</b><br><b>08 Oz:$4000COP</b><br><b>04 Oz:$3000COP</b></p>
+                                      <button  onclick="add('Carajillo de Aguardiente')" href="#" class="btn">Agregar<i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+
+
+                      </div>
+                      <div class="carousel-item">
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="card col m2">
+                                    <img src="imagenes/cafe en leche posillo.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Chocolate</h5>
+                                      <p class="card-text"><b>12 Oz:$4000COP</b><br><b>08 Oz:$3500COP</b><br><b>04 Oz:$3000COP</b></p>
+                                      <button  onclick="add('Chocolate')" href="#" class="btn">Agregar<i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                  </div>
+                                  <div class="card col m2">
+                                    <img src="imagenes/posillo de aromatica+.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Chocolate con leche de almendras</h5>
+                                      <p class="card-text"><b>12 Oz:$5000COP</b><br><b>08 Oz:$4000COP</b><br><b>04 Oz:$3000COP</b></p>
+                                      <button  onclick="add('Chocolate con leche de almendras')" href="#" class="btn">Agregar<i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                  </div>
+                                  <div class="card col m2">
+                                    <img src="imagenes/chocolate.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Milo</h5>
+                                      <p class="card-text"><b>12 Oz:$4500COP</b><br><b>08 Oz:$3500COP</b><br><b>04 Oz:$2500COP</b></p>
+                                      <button  onclick="add('Milo')" href="#" class="btn">Agregar<i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                  </div>
+                            </div>
+                      </div>
+
+                    </div>
+                      <div class="carousel-item">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="card col m2">
+                                    <img src="imagenes/8Oz-10Oz.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Avena</h5>
+                                      <p class="card-text"><b>12 Oz:$5000COP</b><br><b>08 Oz:$3000COP</b><br><b>04 Oz:$1500COP</b></p>
+                                      <button  onclick="add('Avena')" href="#" class="btn">Agregar<i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                  </div>
+                                  <div class="card col m2">
+                                    <img src="imagenes/5Oz.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Aromatica</h5>
+                                      <p class="card-text"><b>12 Oz:$3000COP</b><br><b>08 Oz:$2000COP</b><br><b>04 Oz:$800COP</b></p>
+                                      <button  onclick="add('Aromatica')" href="#" class="btn">Agregar<i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                  </div>
+                                  <div class="card col m2">
+                                    <img src="imagenes/150z.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Gaseosa Personal</h5>
+                                      <p class="card-text"><b>$2000COP</b></p>
+                                      <button  onclick="add('Gaseosa')" href="#" class="btn">Agregar<i class="fa-solid fa-plus"></i></button>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+<!----seudofooter-->
+
+
+<section id="Seccionintermedio">
+
+    <h2>Cafe Colombiano</h2>
+
+</section>
+
+
+
+
+
+
+
+<!---Spot-->
+<section id="Spot">
+  <h2 class="text-center mb-xl-5 pt-5 text-light">Spot Publicitario</h2>
+  <!-- <article class="caja3"> -->
+    
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/beNJKeyyExg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- </article> -->
+</section>
+
+
+
+<section id="Mapa">
+
+
+  <h2 class="text-center mb-xl-5 pt-5 text-light">Encuentranos</h2>
+
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.955370831486!2d-74.16785628590993!3d4.602015743788383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ef6d033c107%3A0x16a76b57775fef34!2sCl.%2056a%20Sur%20%2372c45%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1668471548922!5m2!1ses-419!2sco" width="" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ 
+
+
+</section>
+
+
+
+
+<!---registro-->
+
+
+<section id="register" class="text-light">
+
+    
+  <div class="container">
+
+      
+
+      <div class="row">
+
+          <h2 class="text-center mb-xl-5 pt-5 text-light">Lorem, ipsum.</h2>
+
+          <div class="texto1 col-3 col-lg-3 col-md-3 mt-5 ">
+
+            <textarea name="" id="" required placeholder="Mensaje" class="text-light bg-ligth" ></textarea >
+
+          </div>
+
+
+              <div class="formulario col-8 col-lg-8 col-md-8 mx-auto">
+                  <form class="">
+                      <fieldset class="">
+
+                 
+                         
+
+                  
+                          <br>
+                  
+                          <input type="text" required placeholder="Name" class="p-2 shadow p-3 mt-3 rounded bg-ligth">
+                          <br>
+  
+                  
+                  
+                          <input type="email" required placeholder="E-mail" class="p-2 shadow p-3 mt-3 rounded bg-ligth">
+                          <br>
+                  
+                          <button onclick="alert('mensaje enviado')"  class="enviar text-center text-dark p-2 shadow p-3 mt-3 rounded bg-ligth"><i class="far fa-heart"></i> Enviar</button>
+  
+  
+  
+                      </fieldset>
+                  </form>
+              </div>
+      </div>
+  </div>
+</section>
+
+<footer>
+ <div class="iconesfooter ms-5 col text-center">
+  
+  <a href=""><i class="fa-brands fa-whatsapp me-3"></i></a>
+  <a href=""><i class="fa-brands fa-facebook me-3" ></i></a>
+  <a href=""><i class="fa-brands fa-instagram me-3"></i></a>
+  <p>Derechos Reservados</p>
+  
+ </div>
+ 
+
+
+</footer>
+
+
+
+
+
+
+    
+      
+      <script src="https://kit.fontawesome.com/4b11d78e14.js" crossorigin="anonymous"></script>
+
+      <script src="bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
+
+      <script src="js/pantojadosjs.js"></script>
+</body>
+</html>

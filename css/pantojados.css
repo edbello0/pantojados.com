@@ -1,0 +1,1114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200;400&family=Montserrat:wght@200;400;500;700;800&display=swap');
+@font-face {
+    font-family: GTEAPAC;
+    font-family: zesant;
+    src: url(Fuentes/zesant);
+    src: url(Fuentes/GTEAPAC);
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Manrope', sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+
+
+
+
+    
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+    
+    
+
+   
+
+}
+
+nav{
+  
+    background-color: black;
+   
+}
+
+nav div ul{
+    margin-left: 55%;
+    
+}
+nav div ul li{
+    margin-left: 5px;
+    
+}
+
+
+
+/* .contenedornav .compras{
+    display: flex;
+    justify-content: flex-end;
+
+} */
+
+.contenedornav  .compras .carrito i{
+    border-radius: 20px 0px 0px 20px;
+    background-color: #e58f11;
+    position: fixed;
+    z-index: 100;
+    right: 0%;
+    top: 15%;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 35px;
+}
+
+
+
+.compras .btn-close{
+    background-color: #e58f11;
+}
+.compras .botonpedido button {
+    color: #ffffff
+    ;
+    background-color: #e58f11;
+    transition: .2s;
+}
+.compras .botonpedido button:hover {
+    color: #e58f11;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+/*home*/
+#Home{
+    
+    height: 600px;
+    background-image: url(../imagenes/bgcafehome.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
+
+#Home h2{
+    font-size: 7em;
+    font-family: GTEAPAC;
+    
+    color: #ffff;
+    padding-left: 5%;
+    padding-top: 6%;
+}
+
+
+
+
+
+/*antojos*/
+
+#Antojos{
+    background-color: black;
+    height: auto;
+}
+#Antojos h2{
+    font-family: zesant;
+    font-size: 5em;
+}
+#Antojos .container .card {
+    background-color: black;
+}
+
+#Antojos .container .card h5{
+    color: #e58f11;
+    font-family: zesant;
+    font-size: 2em;
+}
+#Antojos .container .card p{
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+#Antojos .container .card .btn{
+    background-color: #e58f11;
+    color: #ffff;
+    
+    
+}
+
+/*Bebidas             */
+
+
+#Bebidas{
+    background-color: black;
+    height: auto;
+}
+#Bebidas h2{
+    font-family: zesant;
+    font-size: 5em;
+}
+
+
+#Bebidas .container .card {
+    background-color: black;
+}
+
+#Bebidas .container .card h5{
+    color: #e58f11;
+    font-family: zesant;
+    font-size: 2em;
+}
+#Bebidas .container .card p{
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+#Bebidas .container .card .btn{
+    background-color: #e58f11;
+    color: #ffff;
+    
+    
+}
+
+
+
+/*seudofooter*/
+
+#Seccionintermedio{
+    height: 450px;
+    background-image: url(../imagenes/secciondepromocion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+#Seccionintermedio h2{
+    font-size: 6em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #ffff;
+    padding-left: 4%;
+    padding-top: 11%;
+}
+
+
+
+
+/*Spot*/
+#Spot{
+    background-color: black;
+}
+#Spot h2{
+    font-family: zesant;
+    font-size: 5em;
+}
+
+#Spot iframe{
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    display: block;
+}
+
+
+
+
+/*mapa*/
+
+ #Mapa{
+    height: auto;
+    background-color: black;
+
+ }
+ #Mapa iframe{
+
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    display: block;
+ }
+ #Mapa h2{
+    color: white;
+    font-family: zesant;
+    font-size: 5em;
+ }
+
+
+
+
+ /*Registro*/
+ #register{
+    height: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+#register h2{
+    color: white;
+    font-family: zesant;
+    font-size: 5em;
+ }
+
+#register .container .formulario{
+    margin-left: 60%;
+
+}
+#register .container .formulario form{
+    
+    margin-left: 35%;
+    padding-bottom: 15%;
+    height: auto;
+    
+    
+    
+}
+#register .container label{
+    font-size: 1.5em;
+}
+
+#register .container textarea{
+    width: 400px;
+    height: 30vh;
+    margin-left: 25%;
+    border-radius: 3%;
+    color: aliceblue;
+}
+#register .container .texto1{
+    
+    margin-left: 5%;
+    
+}
+
+
+#register .container input{
+    
+    width: 300px;
+    color: white;
+    margin-left: 5px;
+}
+#register form input:focus{
+    box-shadow: rgba(20, 20, 20, 0.651) 0px 0px 10px 0px;
+}
+
+#register .container button{
+    
+    width:300px; 
+    height: 60px; 
+   
+    margin-left: 5px;
+    
+}
+
+footer{
+    background-color: #e58f11;
+    height: 15vh;
+}
+footer i{
+    color: #000000;
+    font-size: 2em;
+    padding-top: 20px;
+    transition: .2s;
+}
+footer i:hover{
+    color: #ffffff;
+    
+}
+footer p{
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+}
+    
+
+
+@media (max-width:1200px){
+
+    /*inicio*/
+    #Home{
+        height: 500px;
+        background-image: url(../imagenes/bgcafehome.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        
+    }
+
+    #Home h2{
+        font-size: 5em;
+        font-family: GTEAPAC;
+
+        font-weight: 600;
+        color: #ffff;
+        padding-left: 5%;
+        padding-top: 10%;
+    }
+
+    /*   seccion intermedio*/
+    #Seccionintermedio{
+        height: 350px;
+        background-image: url(../imagenes/secciondepromocion.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+
+
+    #Seccionintermedio h2{
+        font-size: 5em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #ffff;
+        padding-left: 4%;
+        padding-top: 10%;
+    }
+    
+
+
+    /*spot*/
+
+
+
+    #Spot iframe{
+        width: 1000px;
+        height: 500px;
+       
+    }
+
+    /*mapa*/
+
+    #Mapa{
+        height: auto;
+        background-color: black;
+    
+     }
+     #Mapa iframe{
+    
+        width: 1000px;
+        height: 500px;
+        
+     }
+     #Mapa h2{
+        color: white;
+        font-family: zesant;
+        font-size: 5em;
+     }
+
+
+
+
+
+
+
+ /*Registro*/
+ #register{
+    height: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+#register h2{
+    color: white;
+    font-family: zesant;
+    font-size: 5em;
+ }
+
+#register .container .formulario{
+    margin-left: 60%;
+
+}
+#register .container .formulario form{
+    
+    margin-left: 45%;
+    padding-bottom: 15%;
+    height: auto;
+    
+    
+    
+}
+#register .container label{
+    font-size: 1.5em;
+}
+
+#register .container textarea{
+    width: 500px;
+    height: 30vh;
+    margin-left:40%;
+    border-radius: 3%;
+    color: aliceblue;
+}
+#register .container .texto1{
+    
+    margin-left: 6%;
+    
+}
+
+
+#register .container input{
+    
+    width: 250px;
+    color: white;
+    margin-left: px;
+}
+#register form input:focus{
+    box-shadow: rgba(20, 20, 20, 0.651) 0px 0px 10px 0px;
+}
+
+#register .container button{
+    
+    width:250px; 
+    height: 60px; 
+   
+    margin-left: 5px;}
+
+}
+
+
+
+
+/*Responsive of 992       */
+
+
+
+
+@media (max-width:992px){
+
+    /*inicio*/
+    #Home{
+        height: 500px;
+        background-image: url(../imagenes/bgcafehome.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        
+    }
+
+    #Home h2{
+        font-size: 6em;
+        font-family: GTEAPAC;
+
+
+        font-weight: 600;
+        color: #ffff;
+        padding-left: 5%;
+        padding-top: 8%;
+    }
+
+    /*   seccion intermedio*/
+    #Seccionintermedio{
+        height: 350px;
+        background-image: url(../imagenes/secciondepromocion.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+
+
+    #Seccionintermedio h2{
+        font-size: 5em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #ffff;
+        padding-left: 4%;
+        padding-top: 15%;
+    }
+    
+
+
+    /*spot*/
+
+
+
+    #Spot iframe{
+        width: 700px;
+        height: 300px;
+        
+    }
+
+    /*mapa*/
+
+    #Mapa{
+        height: auto;
+        background-color: black;
+    
+     }
+     #Mapa iframe{
+    
+        width: 700px;
+        height: 500px;
+        
+     }
+     #Mapa h2{
+        color: white;
+        font-family: zesant;
+        font-size: 5em;
+     }
+     #register{
+        height: auto;
+        background-color: rgb(0, 0, 0);
+    }
+    
+    #register h2{
+        color: white;
+        font-family: zesant;
+        font-size: 5em;
+     }
+    
+    #register .container .formulario{
+        margin-left: 60%;
+    
+    }
+    #register .container .formulario form{
+        
+        margin-left: 35%;
+        padding-bottom: 15%;
+        height: auto;
+        
+        
+        
+    }
+    #register .container label{
+        font-size: 1.5em;
+    }
+    
+    #register .container textarea{
+        width: 300px;
+        height: 30vh;
+        margin-left: 30%;
+        border-radius: 3%;
+        color: aliceblue;
+    }
+    #register .container .texto1{
+        
+        margin-left: 5%;
+        
+    }
+    
+    
+    #register .container input{
+        
+        width: 250px;
+        color: white;
+        margin-left: px;
+    }
+    #register form input:focus{
+        box-shadow: rgba(20, 20, 20, 0.651) 0px 0px 10px 0px;
+    }
+    
+    #register .container button{
+        
+        width:250px; 
+        height: 60px; 
+       
+        margin-left: 5px;
+        
+    }
+
+
+
+
+
+
+  }
+
+
+
+
+  
+@media (max-width:768px){
+
+    /*inicio*/
+    #Home{
+        height: 500px;
+        background-image: url(../imagenes/bgcafehome.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        
+    }
+
+    #Home h2{
+        font-size: 5em;
+        
+        font-weight: 600;
+        color: #ffff;
+        padding-left: 5%;
+        padding-top: 15%;
+    }
+
+    /*   seccion intermedio*/
+    #Seccionintermedio{
+        height: 350px;
+        background-image: url(../imagenes/secciondepromocion.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+
+
+    #Seccionintermedio h2{
+        font-size: 4em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #ffff;
+        padding-left: 4%;
+        padding-top: 18%;
+    }
+    
+
+
+    /*spot*/
+
+
+
+    #Spot iframe{
+        width: 600px;
+        height: 300px;
+       
+    }
+
+    /*mapa*/
+
+    #Mapa{
+        height: auto;
+        background-color: black;
+    
+     }
+     #Mapa iframe{
+    
+        width: 600px;
+        height: 300px;
+        
+     }
+     #Mapa h2{
+        color: white;
+        font-family: zesant;
+        font-size: 5em;
+     }
+
+
+
+
+
+
+
+ /*Registro*/
+ #register{
+    height: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+#register h2{
+    color: white;
+    font-family: zesant;
+    font-size: 5em;
+ }
+
+#register .container .formulario{
+    margin-left: 60%;
+
+}
+#register .container .formulario form{
+    
+    margin-left: 35%;
+    padding-bottom: 15%;
+    height: auto;
+    
+    
+    
+}
+#register .container label{
+    font-size: 1.5em;
+}
+
+#register .container textarea{
+    width: 300px;
+    height: 30vh;
+    margin-left: 5%;
+    border-radius: 3%;
+    color: aliceblue;
+}
+#register .container .texto1{
+    
+    margin-left: 5%;
+    
+}
+
+
+#register .container input{
+    
+    width: 250px;
+    color: white;
+    margin-left: px;
+}
+#register form input:focus{
+    box-shadow: rgba(20, 20, 20, 0.651) 0px 0px 10px 0px;
+}
+
+#register .container button{
+    
+    width:250px; 
+    height: 60px; 
+   
+    margin-left: 5px;
+    
+}
+
+
+
+
+  }
+
+
+
+  @media (max-width:576px){
+
+    /*inicio*/
+    #Home{
+        
+        height: 500px;
+        background-image: url(../imagenes/bgcafehome.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        
+    }
+
+    #Home h2{
+        font-size: 5em;
+        font-family: GTEAPAC;
+
+        font-weight: 600;
+        color: #ffff;
+        text-align: center;
+        padding-left: 0%;
+        padding-top: 20%;
+    }
+
+    /*   seccion intermedio*/
+    #Seccionintermedio{
+        height: 350px;
+        background-image: url(../imagenes/secciondepromocion.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+
+
+    #Seccionintermedio h2{
+        font-size: 4em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #ffff;
+        padding-left: 4%;
+        padding-top: 18%;
+    }
+    
+
+
+    /*spot*/
+
+
+
+    #Spot iframe{
+        width: 500px;
+        height: 300px;
+       
+    }
+
+    /*mapa*/
+
+    #Mapa{
+        height: auto;
+        background-color: black;
+    
+     }
+     #Mapa iframe{
+    
+        width: 500px;
+        height: 300px;
+        
+     }
+     #Mapa h2{
+        color: white;
+        font-family: zesant;
+        font-size: 5em;
+     }
+
+
+
+
+
+
+
+ /*Registro*/
+ #register{
+    height: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+#register h2{
+    color: white;
+    font-family: zesant;
+    font-size: 5em;
+ }
+
+#register .container .formulario{
+    margin-left: 60%;
+
+}
+#register .container .formulario form{
+    
+    margin-left: 35%;
+    padding-bottom: 15%;
+    height: auto;
+    
+    
+    
+}
+#register .container label{
+    font-size: 1.5em;
+}
+
+#register .container textarea{
+    width: 200px;
+    height: 30vh;
+    margin-left: 0%;
+    border-radius: 3%;
+    color: aliceblue;
+}
+#register .container .texto1{
+    
+    margin-left: 5%;
+    
+}
+
+
+#register .container input{
+    
+    width: 200px;
+    color: white;
+    margin-left: px;
+}
+#register form input:focus{
+    box-shadow: rgba(20, 20, 20, 0.651) 0px 0px 10px 0px;
+}
+
+#register .container button{
+    
+    width:200px; 
+    height: 60px; 
+   
+    margin-left: 5px;
+    
+}
+
+
+
+
+  }
+
+  @media only screen and (max-width: 482px) and (min-width: 400px){
+    
+    #Home h2{
+        font-size: 4em;
+        
+        font-weight: 600;
+        color: #ffff;
+        padding-left: 0%;
+        padding-top: 15%;
+    }
+    
+    
+    #Spot iframe{
+        width: 200px;
+        height: 300px;
+       
+    }
+
+
+
+    #Mapa{
+        height: auto;
+        background-color: black;
+    
+     }
+     #Mapa iframe{
+    
+        width: 200px;
+        height: 300px;
+        
+     }
+     #Mapa h2{
+        color: white;
+        font-family: zesant;
+        font-size: 5em;
+     }
+
+
+
+        
+        /*Registro*/
+    #register{
+        height: auto;
+        background-color: rgb(0, 0, 0);
+    }
+
+    #register h2{
+        color: white;
+        font-family: zesant;
+        font-size: 5em;
+    }
+
+    #register .container .formulario{
+        margin-left: 60%;
+
+    }
+    #register .container .formulario form{
+        
+        margin-left: 25%;
+        padding-bottom: 15%;
+        height: auto;
+        
+        
+        
+    }
+    #register .container label{
+        font-size: 1.5em;
+    }
+
+    #register .container textarea{
+        width: 100px;
+        height: 30vh;
+        margin-left: 0%;
+        border-radius: 3%;
+        color: aliceblue;
+    }
+    #register .container .texto1{
+        
+        margin-left: 5%;
+        
+    }
+
+
+    #register .container input{
+        
+        width: 100px;
+        color: white;
+        margin-left: px;
+    }
+    #register form input:focus{
+        box-shadow: rgba(20, 20, 20, 0.651) 0px 0px 10px 0px;
+    }
+
+    #register .container button{
+        
+        width:100px; 
+        height: 60px; 
+    
+        margin-left: 5px;
+        
+    }
+
+  }
+
+  @media (max-width:250px){
+
+    #Home{
+    
+        height: 800px;
+        width: 500px;
+        background-image: url(../imagenes/bgcafehome.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        
+    }
+
+
+
+    #Antojos{
+        background-color: black;
+        height: auto;
+        width: 500px;
+    }
+
+
+    #Bebidas{
+        background-color: black;
+        height: auto;
+        width: 500px;
+    }
+
+    #Seccionintermedio{
+        height: 350px;
+        width: 500px;
+        background-image: url(../imagenes/secciondepromocion.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+
+
+    #Spot{
+        width: 500px;
+    }
+    #Spot iframe{
+        width: 400px;
+        height: 300px;
+       
+    }
+
+   
+
+
+    #Mapa{
+        height: auto;
+        background-color: black;
+        width: 500px;
+    
+     }
+     #Mapa iframe{
+        
+        width: 400px;
+    
+     }
+
+
+     #register{
+        width: 500px;
+     }
+    
+
+
+    footer{
+        width: 500px;
+    }
+
+
+
+
+
+
+  }
